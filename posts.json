@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Post 1",
+    "content": "This is post1, for a quick json fetch demo!"
+  },
+
+  {
+    "name": "Post 2",
+    "content": "This is post2, for a quick json fetch demo!"
+  },
+
+  {
+    "name": "Post 3",
+    "content": "This is post3, for a quick json fetch demo!"
+  },
+
+  {
+    "name": "Post 4",
+    "content": "This is post4, for a quick json fetch demo!"
+  },
+
+  {
+    "name": "Post 5",
+    "content": "This is post5, for a quick json fetch demo!"
+  },
+
+  {
+    "name": "Post 6",
+    "content": "This is post6, for a quick json fetch demo!"
+  }
+]
