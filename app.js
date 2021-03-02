@@ -37,7 +37,7 @@ const getJson = () => {
       posts.forEach((post) => {
         output += `<hr>
         <h3 style="text-align: left; margin-left: 0.875rem;" class="card-title">${post.name}</h3>
-        <p style="text-align: center; font-size: 13rem;" class="card-text">${post.content}</p>
+        <p style="text-align: center; class="card-text">${post.content}</p>
       </div>
      `;
         document.getElementById("textContent").innerHTML = "";
