@@ -36,7 +36,7 @@ const getJson = () => {
       let output = ``;
       posts.forEach((post) => {
         output += `<hr>
-        <h3 style="text-align: left; margin-left: 20px;" class="card-title">${post.name}</h3>
+        <h3 style="text-align: left; margin-left: 0.875rem;" class="card-title">${post.name}</h3>
         <p style="text-align: center;" class="card-text">${post.content}</p>
       </div>
      `;
@@ -66,8 +66,8 @@ const getGithubUsers = () => {
     let output = ``;
     users.forEach((user) => {
       output += `<hr>
-      <h6 style="text-align: left; margin-left: 20px;" class="card-title">${user.login}</h3>
-      <p style="text-align: center;" class="card-text"><a href="${user.html_url}" target="_blank">Visit Profile<a/></p>
+      <h6 style="text-align: left; margin-left: 1.25rem;" class="card-title">${user.login}</h3>
+      <p style="text-align: center; font-size: 13rem;" class="card-text"><a href="${user.html_url}" target="_blank">Visit Profile<a/></p>
     </div>
    `;
       document.getElementById("textContent").innerHTML = "";
