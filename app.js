@@ -11,7 +11,8 @@ const getData = () => {
     })
     .then((data) => {
       // console.log(data);
-      document.getElementById("card").innerHTML = data;
+      document.getElementById("card").innerHTML = "";
+      document.getElementById("textContent").innerHTML = data;
     });
 };
 
@@ -38,7 +39,9 @@ const getJson = () => {
         <p style="text-align: center;" class="card-text">${post.content}</p>
       </div>
      `;
+        document.getElementById("textContent").innerHTML = "";
         document.getElementById("card").innerHTML = output;
+
       });
 
     });
@@ -65,6 +68,7 @@ const getGithubUsers = () => {
       <p style="text-align: center;" class="card-text"><a href="${user.html_url}" target="_blank">Visit Profile<a/></p>
     </div>
    `;
+      document.getElementById("textContent").innerHTML = "";
       document.getElementById("card").innerHTML = output;
     });
 
