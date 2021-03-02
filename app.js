@@ -12,6 +12,7 @@ const getData = () => {
     .then((data) => {
       // console.log(data);
       document.getElementById("card").innerHTML = "";
+      document.getElementById("card2").innerHTML = "";
       document.getElementById("textContent").innerHTML = data;
     });
 };
@@ -40,6 +41,7 @@ const getJson = () => {
       </div>
      `;
         document.getElementById("textContent").innerHTML = "";
+        document.getElementById("card2").innerHTML = "";
         document.getElementById("card").innerHTML = output;
 
       });
@@ -64,12 +66,13 @@ const getGithubUsers = () => {
     let output = ``;
     users.forEach((user) => {
       output += `<hr>
-      <h3 style="text-align: left; margin-left: 20px;" class="card-title">${user.login}</h3>
+      <h6 style="text-align: left; margin-left: 20px;" class="card-title">${user.login}</h3>
       <p style="text-align: center;" class="card-text"><a href="${user.html_url}" target="_blank">Visit Profile<a/></p>
     </div>
    `;
       document.getElementById("textContent").innerHTML = "";
-      document.getElementById("card").innerHTML = output;
+      document.getElementById("card").innerHTML = "";
+      document.getElementById("card2").innerHTML = output;
     });
 
   })
